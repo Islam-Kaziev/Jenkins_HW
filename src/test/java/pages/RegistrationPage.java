@@ -120,6 +120,7 @@ public class RegistrationPage {
     }
 
     public RegistrationPage submitForm() {
+        $("#submit").scrollIntoView(false);
         $("#submit").click();
 
         return this;
