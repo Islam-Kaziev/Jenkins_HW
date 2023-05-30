@@ -4,6 +4,7 @@ import com.github.javafaker.Faker;
 import org.junit.jupiter.api.Tag;
 import org.junit.jupiter.api.Test;
 
+import static io.qameta.allure.Allure.step;
 import static tests.TestData.*;
 
 @Tag("simple")
@@ -28,7 +29,7 @@ public class RegistrationPageWithJavaFaker extends TestBase {
                 state = "NCR",
                 city = "Delhi";
 
-
+        step("Fill the registration form", () -> {
         registrationPage.openPage()
                 .setFirstName(firstName)    
                 .setLastName(lastName)
@@ -42,8 +43,10 @@ public class RegistrationPageWithJavaFaker extends TestBase {
                 .setAddress(currentAddress)
                 .setState(state)
                 .setCity(city)
-                .submitForm()
-                .verifyResultsModalAppears()
+                .submitForm();
+        });
+        step("Verify results", () -> {
+        registrationPage.verifyResultsModalAppears()
                 .verifyResult("Student Name", firstName + " " + lastName)
                 .verifyResult("Student Email", email)
                 .verifyResult("Gender", gender)
@@ -54,6 +57,7 @@ public class RegistrationPageWithJavaFaker extends TestBase {
                 .verifyResult("Picture", picture)
                 .verifyResult("Address", currentAddress)
                 .verifyResult("State and City", state + " " + city);
+        });
         //checking the data after sending
     }
 }
