@@ -107,7 +107,7 @@ public class RegistrationPage {
 
     public RegistrationPage setState(String state) {
         $("#state").click();
-        $("#react-select-3-option-1").click();
+        $("#react-select-3-option-0").click();
 
         return this;
     }
