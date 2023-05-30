@@ -25,8 +25,8 @@ public class RegistrationPageWithJavaFaker extends TestBase {
                 hobbies = hobbiesRandom(),
                 picture = "dog.jpeg",
                 currentAddress = faker.address().fullAddress(),
-                state = "Rajasthan",
-                city = "Jaiselmer";
+                state = "NCR",
+                city = "Delhi";
 
 
         registrationPage.openPage()
