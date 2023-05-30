@@ -107,14 +107,14 @@ public class RegistrationPage {
 
     public RegistrationPage setState(String state) {
         $("#state").click();
-        $("#react-select-3-option-3").click();
+        $("#react-select-3-option-1").click();
 
         return this;
     }
 
     public RegistrationPage setCity(String city) {
         $("#city").click();
-        $("#react-select-4-option-1").click();
+        $("#react-select-4-option-0").click();
 
         return this;
     }
