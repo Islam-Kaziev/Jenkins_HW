@@ -6,6 +6,13 @@ plugins {
 group 'guru.ea'
 version '1.0-SNAPSHOT'
 
+compileJava {
+    options.encoding = 'UTF-8'
+}
+compileTestJava {
+    options.encoding = 'UTF-8'
+}
+
 allure {
     report {
         version.set("2.21.0")
