@@ -13,7 +13,7 @@ import properties.SystemPropertiesTests;
 
 import java.util.Map;
 
-public class TestBase extends SystemPropertiesTests {
+public class TestBase {
     RegistrationPage registrationPage = new RegistrationPage();
 
     @BeforeAll
