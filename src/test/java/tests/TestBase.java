@@ -13,7 +13,7 @@ import org.junit.jupiter.api.BeforeAll;
 import java.util.Map;
 
 public class TestBase {
-    RegistrationPage registrationPage = new RegistrationPage();
+        RegistrationPage registrationPage = new RegistrationPage();
 
     @BeforeAll
     static void beforeAll() {
