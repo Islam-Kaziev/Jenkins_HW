@@ -9,7 +9,6 @@ import org.openqa.selenium.remote.DesiredCapabilities;
 import pages.RegistrationPage;
 import com.codeborne.selenide.Configuration;
 import org.junit.jupiter.api.BeforeAll;
-import properties.SystemPropertiesTests;
 
 import java.util.Map;
 
