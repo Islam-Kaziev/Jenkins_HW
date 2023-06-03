@@ -25,4 +25,5 @@ public interface WebConfig extends Config {
     @Key("baseUrl")
     @DefaultValue("https://demoqa.com")
     String getBaseUrl();
+
 }
